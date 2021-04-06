@@ -49,7 +49,7 @@ ms.locfileid: "97468603"
 1.  [sp_fulltext_service](../../relational-databases/system-stored-procedures/sp-fulltext-service-transact-sql.md) システム ストアド プロシージャを使用して、言語の一覧を更新します。次に例を示します。  
   
     ```  
-    exec sp_fulltext_service 'update_languages';   
+    EXEC sp_fulltext_service 'update_languages';   
     ```  
   
 ### <a name="to-unregister-uninstalled-word-breakers-and-filters"></a>アンインストールされたワード ブレーカーおよびフィルターを登録解除するには  
@@ -57,13 +57,13 @@ ms.locfileid: "97468603"
 1.  **sp_fulltext_service** を使用して、言語の一覧を更新します。次に例を示します。  
   
     ```  
-    exec sp_fulltext_service 'update_languages'  
+    EXEC sp_fulltext_service 'update_languages'  
     ```  
   
 2.  **sp_fulltext_service** を使用して、フィルター デーモン ホスト プロセス (fdhost.exe) を起動します。次に例を示します。  
   
     ```  
-    exec sp_fulltext_service 'restart_all_fdhosts';  
+    EXEC sp_fulltext_service 'restart_all_fdhosts';  
     ```  
   
 ### <a name="to-replace-existing-word-breakers-or-filters-when-installing-new-ones"></a>新しいワード ブレーカーまたはフィルターのインストール時に既存のワード ブレーカーまたはフィルターを置き換えるには  
