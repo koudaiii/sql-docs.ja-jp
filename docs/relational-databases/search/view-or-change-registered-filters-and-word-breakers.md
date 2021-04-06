@@ -57,7 +57,7 @@ ms.locfileid: "97468603"
 1.  **sp_fulltext_service** を使用して、言語の一覧を更新します。次に例を示します。  
   
     ```  
-    exec sp_fulltext_service 'update_languages'  
+    exec sp_fulltext_service 'update_languages';  
     ```  
   
 2.  **sp_fulltext_service** を使用して、フィルター デーモン ホスト プロセス (fdhost.exe) を起動します。次に例を示します。  
